@@ -1,0 +1,33 @@
+name: "Milos Djeric"
+output_dir: "."
+navbar:
+  title: "Milos Djeric"
+  left:
+    - icon: fa-home
+      href: index.html
+    - text: "My story"
+      href: my_story.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Projects"
+      href: projects.html
+      menu:
+        - text: "Heading 1"
+        - text: "Project1"
+          href: project1.html
+        - text: "Project2"
+          href: project2.html
+        - text: "---------"
+        - text: "Other projects"
+          href: other_projects.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/mdjeric
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/milosdjeric/
+output:
+  html_document:
+    theme: cosmo
+    css: 'styles.css'
