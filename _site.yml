@@ -1,33 +1,53 @@
-name: "Milos Djeric"
-output_dir: "."
+name: Milos Djeric
+output_dir: '.'
 navbar:
-  title: "Milos Djeric"
+  title: Milos Djeric
   left:
-    - icon: fa-home
-      href: index.html
-    - text: "My story"
-      href: my_story.html
-    - text: "Resume"
-      href: resume.html
-    - text: "Projects"
-      href: projects.html
-      menu:
-        - text: "Heading 1"
-        - text: "Project1"
-          href: project1.html
-        - text: "Project2"
-          href: project2.html
-        - text: "---------"
-        - text: "Other projects"
-          href: other_projects.html
+  - icon: fa-home
+    href: index.html
+  - text: Resume
+    href: resume.html
+  - text: Projects
+    href: projects.html
+    menu:
+    - text: Overview
+      href: projects_overview.html
+    - text: '----------'
+    - text: Recent projects
+    - text: GPSC Survey
+      href: gpsc.html
+    - text: Nationalism and 'Curse of Rurality'
+      href: nationalism_rurban.html
+    - text: '----------'
+    - text: R work samples
+    - text: Belgrade Airport
+      href: beg_aero.html
+    - text: Nis Airport
+      href: ini_aero.html
+  - text: Few R functions
+    menu:
+    - text: Overview
+      href: r_fije.html
+    - text: '----------'
+    - text: Improving regression coef. plots
+      href: f_reg_cp.html
+    - text: Recoding GSS religion
+      href: f_relig.html
+    - text: Mean on at leasst
+      href: f_mean.html
+    - text: Scale with K and M
+      href: f_scale.html
   right:
-    - icon: fa-envelope fa-lg
-      href: contact.html
-    - icon: fa-github fa-lg
-      href: http://github.com/mdjeric
-    - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/milosdjeric/
+  - icon: fa-envelope fa-lg
+    href: contact.html
+  - icon: fa-github fa-lg
+    href: http://github.com/mdjeric
+  - icon: fa-linkedin fa-lg
+    href: https://www.linkedin.com/in/milosdjeric/
 output:
   html_document:
     theme: cosmo
-    css: 'styles.css'
+    lib_dir: site_libs
+    self_contained: no
+css: styles.css
+
