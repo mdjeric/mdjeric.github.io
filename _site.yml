@@ -48,6 +48,7 @@ output:
   html_document:
     theme: cosmo
     lib_dir: site_libs
-    self_contained: no
+    includes:
+      in_header: matomo.html
 css: styles.css
 
