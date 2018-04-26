@@ -5,7 +5,7 @@ navbar:
   left:
   - icon: fa-home
     href: index.html
-  - text: Resume
+  - text: Curriculum vitae
     href: resume.html
   - text: Projects
     href: projects.html

@@ -283,7 +283,7 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="resume.html">Resume</a>
+  <a href="resume.html">Curriculum vitae</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -386,7 +386,7 @@ div.tocify {
 <li><code>factor</code> probably more precise of the level, it is not used in this step since it is; possible that two same levels for two different variables exist;</li>
 <li><code>AME</code> either average marginal effect or coefficient, numeric.</li>
 </ul>
-<p>It looks something like this (<code>AME</code> rounded so it could fit):</p>
+<p>It looks something like this:</p>
 <pre><code>##                      full_factor                              var
 ## 1                            age                              Age
 ## 2                  immigrantTRUE                        Immigrant
@@ -394,13 +394,13 @@ div.tocify {
 ## 4    polviews_mEXTREMELY LIBERAL Political views\n[ref: moderate]
 ## 5 polviews_mEXTRMLY CONSERVATIVE Political views\n[ref: moderate]
 ## 6              polviews_mLIBERAL Political views\n[ref: moderate]
-##                  factor   AME
-## 1        One year older -0.01
-## 2                   Yes  0.03
-## 3          Conservative -0.15
-## 4      Extremly Liberal  0.38
-## 5 Extremly Conservative -0.05
-## 6               Liberal  0.21</code></pre>
+##                  factor          AME
+## 1        One year older -0.008072866
+## 2                   Yes  0.033819800
+## 3          Conservative -0.154539964
+## 4      Extremly Liberal  0.376695109
+## 5 Extremly Conservative -0.052852316
+## 6               Liberal  0.208817771</code></pre>
 </div>
 <div id="how-does-it-do-it" class="section level2">
 <h2>How does it do it?</h2>
@@ -534,7 +534,7 @@ head(MN[, c(&quot;full_factor&quot;, &quot;var&quot;, &quot;factor&quot;, &quot;
 ## [12] &quot;Sex&quot;                                
 ## [13] &quot;Race\n[ref: white]&quot;</code></pre>
 <p>Within ggplot2, the order should be called in following way:</p>
-<pre eval="FALSE"><code>(...) ### Additional pre-plot formating is in repository, or will be there soon
+<pre eval="FALSE"><code> ### Additional pre-plot formating is in repository, or will be there soon
 
 p_m &lt;- ggplot(data = MN, aes(x = reorder(factor, ordr),
                              y = AME,
@@ -544,7 +544,7 @@ p_m &lt;- ggplot(data = MN, aes(x = reorder(factor, ordr),
                              alpha = sig)) +
   scale_colour_manual(values = c(&quot;#1b9e77&quot;, &quot;#d95f02&quot;, &quot;#7570b3&quot;))
 
-(...) ### The missing code for whole is in repository, or will be there soon
+### The missing code for whole is in repository, or will be there soon
 
 p_m &lt;- p_m + facet_grid(var ~ .,
                           scales = &quot;free_y&quot;,
@@ -554,12 +554,12 @@ p_m &lt;- p_m + facet_grid(var ~ .,
 </div>
 <div id="how-do-outups-compare" class="section level2">
 <h2>How do outups compare?</h2>
-<p>Without function: <img src="f_reg_cp_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
-<p>With function (and some additional few dozen of lines, but the structure is important) <img src="f_reg_cp_files/figure-html/unnamed-chunk-6-1.png" width="960" /></p>
+<p>Without function: <img src="f_reg_cp_files/figure-html/plot_no_function-1.png" width="960" /></p>
+<p>With function (and some additional few dozen of lines, but the structure is important) <img src="f_reg_cp_files/figure-html/plot_function-1.png" width="960" /></p>
 </div>
 <div id="this-is-betterworse-than-this-plot" class="section level2">
 <h2>This is better/worse than this plot!</h2>
-<p><img src="f_reg_cp_files/figure-html/unnamed-chunk-7-1.png" width="960" /></p>
+<p><img src="f_reg_cp_files/figure-html/plot_hrbrmstr-1.png" width="960" /></p>
 <p>Yes, there are two (!) problems in creating perfect plot:</p>
 <ol style="list-style-type: decimal">
 <li><p>Labels that are used in facets can be left align or center aligned. If they are center aligned, second row can be included and it looks nice. However, if they are left (or right) aligned, the whole block of text is aligned, and then two rows are centered within that area making it completely intelligible.</p></li>

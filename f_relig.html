@@ -283,7 +283,7 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="resume.html">Resume</a>
+  <a href="resume.html">Curriculum vitae</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -386,7 +386,7 @@ div.tocify {
 <div id="attention" class="section level2">
 <h2>Attention!</h2>
 <p>Function is usable but with certain limitations. At this moment it successfully works only for respondent’s religion and religion at the age of 16 (although the process can be used on other derived variables), and when data is imported from SPSS file to data frame, with trimmed factor names and values, without use of missing values.</p>
-<p><strong>If this does not suit your need, ad hoc workaround is to import GSS dataset in your fashion of choice (e.g. with use of <code>NA</code>) and identical dataset as required by this function. You should imediatlly use the function on the second dataframe, and assing values of new variable to the first. Ideally, you would also assing the variables used for recoding, and check them against main dataframe that everything is OK.</strong></p>
+<p><em>If this does not suit your need, ad hoc workaround is to import GSS dataset in your fashion of choice (e.g. with use of <code>NA</code>) and identical dataset as required by this function. You should imediatlly use the function on the second dataframe, and assing values of new variable to the first. Ideally, you would also assing the variables used for recoding, and check them against main dataframe that everything is OK.</em></p>
 </div>
 <div id="explanation-of-how-it-works" class="section level2">
 <h2>Explanation of how it works</h2>
@@ -423,7 +423,7 @@ summary(GSS[, c(&quot;relig&quot;, &quot;denom&quot;, &quot;other&quot;)])</code
 ## 2536       NONE              IAP                            IAP
 ## 2537   CATHOLIC              IAP                            IAP
 ## 2538 PROTESTANT            OTHER Congregationalist, 1st Congreg</code></pre>
-<p>As a starting point for a more universal recoding function, this one uses three tables (in <code>religion_punches</code> folder, heads presented here) from which three vectors are formed (<code>relig</code>, <code>denom</code>, and <code>other</code>) where index coresponds to punch number, and label is value.</p>
+<p>As a starting point for a more universal recoding function, this one uses three tables (in <code>religion_punches</code> folder, heads presented here) from which three vectors are formed (<code>relig</code>, <code>denom</code>, and <code>other</code>) where index corresponds to punch number, and label is value.</p>
 <pre><code>## $relig.csv
 ##   punch      label
 ## 1     0        IAP
@@ -450,8 +450,8 @@ summary(GSS[, c(&quot;relig&quot;, &quot;denom&quot;, &quot;other&quot;)])</code
 ## 4     3 Ind Bible, Bible, Bible Fellowship
 ## 5     5                 Church of Prophecy
 ## 6     6            New Testament Christian</code></pre>
-<p>For each <em>new</em> religious identification, separate vectors (for <code>relig</code>, <code>denom</code>, and/or <code>other</code>) are created that contain punch codes and labels, per paper and SPSS syntax. In addition, logical vectors are created for Sectoarian Protestants with valid denomination codes for sorting between ‘Sectarian Protestants’, ‘Christian - no group given’, and ‘other religions’.</p>
-<p><strong>This approach is somewhat superior to usual practices of recoding, since it can be confirmed through basic set operations that there is no overlap between groups or that some categories are left out.</strong></p>
+<p>For each <em>new</em> religious identification, separate vectors (for <code>relig</code>, <code>denom</code>, and/or <code>other</code>) are created that contain punch codes and labels, per paper and SPSS syntax. In addition, logical vectors are created for Sectarian Protestants with valid denomination codes for sorting between ‘Sectarian Protestants’, ‘Christian - no group given’, and ‘other religions’.</p>
+<p><em>This approach is somewhat superior to usual practices of recoding, since it can be confirmed through basic set operations that there is no overlap between groups or that some categories are left out.</em></p>
 <p>Next, twelve logical vectors, for respondent’s belonging to each group, are created by checking against appropriate vectors containing labels. Names are assigned, function prints frequency table, and returns vector that can be assigned to a new variable.</p>
 <p>This allows that basic structure can be generalized for recoding of all three-variable sets of religious identification that can be imported as either factors with names or numerical values (or combination, as is the case with some groups), easy recoding into different number of groups, and printing of detailed classification that includes names of all religions and denominations.</p>
 </div>
@@ -692,7 +692,7 @@ summary(GSS[, c(&quot;relig&quot;, &quot;denom&quot;, &quot;other&quot;)])</code
 ## None                       522    20.57  89.52
 ## Other religion              88     3.47  92.99
 ## Sectarian Protestant       178     7.01 100.00</code></pre>
-<p>And the tail, from the begining looks like this.</p>
+<p>And the tail, from the beginning looks like this.</p>
 <pre class="r"><code>tail(GSS[, c(&quot;relig&quot;, &quot;denom&quot;, &quot;other&quot;, &quot;religion&quot;)])</code></pre>
 <pre><code>##           relig            denom                          other
 ## 2533 PROTESTANT BAPTIST-DK WHICH                            IAP

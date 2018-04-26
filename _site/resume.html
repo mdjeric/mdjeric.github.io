@@ -11,11 +11,11 @@
 
 
 
-<title>Curriculum vitae</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -25,7 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -99,58 +98,6 @@ button.code-folding-btn:focus {
 }
 </style>
 
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
 
 
 <div class="container-fluid main-container">
@@ -264,110 +211,10 @@ div.tocify {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Milos Djeric</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="resume.html">Curriculum vitae</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Projects
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="projects_overview.html">Overview</a>
-    </li>
-    <li class="divider"></li>
-    <li class="dropdown-header">Recent projects</li>
-    <li>
-      <a href="gpsc.html">GPSC Survey</a>
-    </li>
-    <li>
-      <a href="nationalism_rurban.html">Nationalism and 'Curse of Rurality'</a>
-    </li>
-    <li class="divider"></li>
-    <li class="dropdown-header">R work samples</li>
-    <li>
-      <a href="beg_aero.html">Belgrade Airport</a>
-    </li>
-    <li>
-      <a href="ini_aero.html">Nis Airport</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Few R functions
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="r_fije.html">Overview</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="f_reg_cp.html">Improving regression coef. plots</a>
-    </li>
-    <li>
-      <a href="f_relig.html">Recoding GSS religion</a>
-    </li>
-    <li>
-      <a href="f_mean.html">Mean on at leasst</a>
-    </li>
-    <li>
-      <a href="f_scale.html">Scale with K and M</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="contact.html">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="http://github.com/mdjeric">
-    <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/milosdjeric/">
-    <span class="fa fa-linkedin fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">Curriculum vitae</h1>
 
 </div>
 
@@ -376,8 +223,8 @@ div.tocify {
 <hr />
 <div id="info" class="section level3">
 <h3>Info</h3>
-<p>What follows is a fairly detailed CV focused on sociology or data science experiences.</p>
-<p><i class="fa fa-file"></i> For short focused resume click <a href="Milos_Djeric_sociology_data_science.pdf">here</a>.</p>
+<p>What follows is a fairly detailed list of things that I did and are in some way related to sociology or data science.</p>
+<p><i class="fa fa-file"></i> For short focused resume click <a href="resume.pdf">here</a>.</p>
 <hr />
 </div>
 <div id="formal-positions" class="section level3">
@@ -390,7 +237,7 @@ div.tocify {
 <li>Design and execution of graduate students survey that provides actionable insight.</li>
 <li>Developed interview protocols, questions, project and analysis plans, and reports.</li>
 <li>Worked with external vendors on survey deployment and analysis/reporting.</li>
-<li><a href="gpsc.html">More details under projects page.</a></li>
+<li>More details under <a href="gpsc.html">projects</a>.</li>
 </ul>
 </div>
 </div>
@@ -433,7 +280,7 @@ div.tocify {
 <div id="grant-from-open-society-institute-20092010" class="section level5">
 <h5><em>Grant from Open Society Institute</em>, 2009–2010</h5>
 <ul>
-<li>First person to obtain grant for research within UEP home country project program ($500).</li>
+<li>First person to obtain $500 grant for research based home project.</li>
 <li>Prepared detailed plan, budget, timeline; ensured completion and internal/external evaluation of the project.</li>
 <li>Designed, conducted, and organized a survey of LGBT persons on issue of violence.</li>
 <li>Analyzed data and presented results on a conference in Istanbul.</li>
@@ -465,7 +312,7 @@ div.tocify {
 <h3>Research</h3>
 <div id="american-nationalism-and-the-curse-of-rurality-urban-rural-differences-and-the-notion-of-national-belonging" class="section level5">
 <h5>American Nationalism and the “Curse of Rurality”: Urban-Rural Differences and the Notion of National Belonging</h5>
-<p>Relationship between nationalism and urban or rural environment is not one that is often studied, part from traditional historical interpretation of it being a modern, urban phenomenon, characterized by imagery and discourse of rurality. Yet it seems that, in the last several decades, not only have nationalist conflicts mostly been rooted within the countryside and nationalist agendas won on elections in them, but that there is a more fundamental connection between nationalism and rurality. While briefly addressing this issue, this paper focuses on the analysis of 2014 GSS data, exploring the relationship between the place of living and the notion of national belonging. What is presented is a clear, but not conclusive, evidence on the presence of more nationalistic attitudes among persons living in rural areas, especially among those who spent most of their childhood in them. <a href="nationalism_rurban.html">More details under projects page.</a></p>
+<p>Relationship between nationalism and urban or rural environment is not one that is often studied, part from traditional historical interpretation of it being a modern, urban phenomenon, characterized by imagery and discourse of rurality. Yet it seems that, in the last several decades, not only have nationalist conflicts mostly been rooted within the countryside and nationalist agendas won on elections in them, but that there is a more fundamental connection between nationalism and rurality. While briefly addressing this issue, this paper focuses on the analysis of 2014 GSS data, exploring the relationship between the place of living and the notion of national belonging. What is presented is a clear, but not conclusive, evidence on the presence of more nationalistic attitudes among persons living in rural areas, especially among those who spent most of their childhood in them. More details see <a href="gpsc.html">here</a>…</p>
 </div>
 <div id="serb-diaspora-and-serbia-analysis-of-identity-constructs-promoted-in-official-textbooks-for-diaspora-for-elementary-education" class="section level5">
 <h5>Serb Diaspora and Serbia: Analysis of Identity Constructs Promoted in Official Textbooks for Diaspora for Elementary Education</h5>
@@ -533,8 +380,8 @@ div.tocify {
 <hr />
 </div>
 </div>
-<div id="miscellaneous" class="section level3">
-<h3>Miscellaneous</h3>
+<div id="miscellianus" class="section level3">
+<h3>Miscellianus</h3>
 <div id="other-projects" class="section level5">
 <h5>Other projects</h5>
 <ul>
@@ -555,7 +402,7 @@ div.tocify {
 <ul>
 <li>English</li>
 <li>Serbo-Croatian (Bosnian, Croatian, Montenegrin, Serbian)</li>
-<li>French (<em>limited profficiency</em>)</li>
+<li>French (<em>imited profficiency</em>)</li>
 </ul>
 </div>
 <div id="translations" class="section level5">
@@ -598,14 +445,14 @@ div.tocify {
 </ul></li>
 <li>Mixed-methods, media research, project management, presentation, collaboration</li>
 </ul>
-<div id="some-technical-skills" class="section level5">
-<h5>Some technical skills</h5>
+<div id="some-tehnical-skills" class="section level5">
+<h5>Some tehnical skills</h5>
 <ul>
 <li>Easy use
 <ul>
 <li>R, SPSS, MS Office (including decently advanced Excel), Latex, Google Applications, Open Office,…</li>
 </ul></li>
-<li>Comforable to use
+<li>Could come on board within a week or two
 <ul>
 <li>Stata, NVivo, SQL, Tableau, Linux</li>
 </ul></li>
