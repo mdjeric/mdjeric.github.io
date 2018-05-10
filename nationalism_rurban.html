@@ -319,7 +319,7 @@ div.tocify {
       <a href="nationalism_rurban.html">Nationalism and 'Curse of Rurality'</a>
     </li>
     <li class="divider"></li>
-    <li class="dropdown-header">R work samples</li>
+    <li class="dropdown-header">R report samples</li>
     <li>
       <a href="beg_aero.html">Belgrade Airport</a>
     </li>
@@ -395,26 +395,26 @@ div.tocify {
 <p>Nationalism first develops in 19<sup>th</sup> century European small urban areas <span class="citation">(Hobsbawm 1996)</span>, and it would take decades of nation-building modernizing projects for most people to become conscious members of the nation <span class="citation">(Weber 1976)</span>. However, while closely related to modernity, “its symbolism is drawn from the healthy, pristine, vigorous life of the peasants, of the <em>Volk</em>, the <em>narod</em>” <span class="citation">(Gellner 2008)</span>, and this central role of rural imagery has been well documented.</p>
 <p>Yet, very few contemporary authors further explore nationalism’s relationship with urbanity and rurality <span class="citation">(Nairn 1997)</span>. It seems that, in the last several decades, not only have nationalist conflicts mostly been rooted within the countryside and nationalist agendas won on elections in them, but that there is a more fundamental connection between nationalism and rurality. Existence of stronger national sentiments among people living in rural areas would thus indicate a pressing need for theories of nationalism to revisit this relationship, both in context of historical development of “post-modern” times and effect of nationalism’s imagery on its practice.</p>
 <div id="measuring-nationalism" class="section level2">
-<h2>Measuring Nationalism</h2>
+<h2>Measuring nationalism</h2>
 <p>Measuring national identity, or nationalism, can be rather complicated due to its multidimensionality and overlap with similar concepts. Malesevic argues that in their totality they are “concepts of limited use in empirical research”, <span class="citation">(Malesevic 2006)</span>. This conceptual cacophony means that ways in which it is measured varies greatly—from rather simple models to latent class analysis, from theoretically imposed categories, to the ones driven by data. Most comprehensive data on nationalism, from International Social Survey Program, has served for dozens of different approaches in studying national identity, nationalism, or its strength, over the period of the last two decades.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <div style="float: right; position: relative">
-<p><img src="nationalism_rurban_files/figure-html/dist_cb-1.png" width="384" /></p>
+<p><img src="nationalism_rurban_files/figure-html/criteria-belonging-distribution-1.png" width="384" /></p>
 </div>
 <p>A useful proxy of nationalism is criteria of belonging—its “openness” or “restrictiveness”. Namely, boundaries of the group are key in defining what nation is and who belongs to it. But they are not solid, they vary across time, nations, and within nations—especially across socio-demographic characteristics. Thus, understanding the conceptions of criteria of national membership may be vital for understanding nationalism <span class="citation">Bonikowski (2016)</span>. Furthermore, it could be argued that it is a fundamental concept that indicates more nationalistic attitudes.</p>
 <p>Nationalism, or more precisely—criteria of membership in the nation—is measured by eight questions from the survey. Respondents identified how important are individual items in determining if someone is “truly American”. Questions are highly correlated, and principal component analysis allows us to group them into index: criteria of belonging. Lower value denotes more restrictive, or closed, understanding of American national belonging, while the highest theoretical value of 4 indicates completely open notion. Almost 85% of the sample scores less than 2.5 on it, meaning that Americans have fairly restrictive notion of who “truly belongs” to the nation.</p>
-<p><img src="nationalism_rurban_files/figure-html/truly_american-1.png" width="960" /></p>
+<p><img src="nationalism_rurban_files/figure-html/truly-american-1.png" width="960" /></p>
 </div>
 <div id="including-urbanity-and-rurality" class="section level2">
-<h2>Including Urbanity and Rurality</h2>
+<h2>Including urbanity and rurality</h2>
 <p>Distinguishing urban from rural areas might be similarly difficult endeavor, especially in the context of a complex issue affected by many different social and historical factors, as nationalism is. Using publicly available GSS data and relying on existing area classifications is additional challenge. But 2014 survey has an effective variable which can also be used as an approximation of the studied relationship: self reported place of childhood. Participants were asked to identify the place in which they lived until the age of 16 as either rural area, medium, or large city.</p>
-<p><img src="nationalism_rurban_files/figure-html/cb_place-1.png" width="960" /></p>
+<p><img src="nationalism_rurban_files/figure-html/criteriabelonging-place-1.png" width="960" /></p>
 <p>Bivariate analysis shows that there is statistically significant difference in nationalism between persons living in large cities or suburbs, on one side, and persons living in other areas of the country, including rural ones. As expected, persons living in more urban areas have also more open notions of national belonging. This effect is even more evident when we focus at the place of childhood, where persons who grew up in large cities or suburbs have the most open criteria of belonging, followed by persons from cities, and lastly those who grew up in rural areas have rather restrictive vision of who can “truly” be American.<br />
 It is worth noting that criteria of belonging depends upon individual’s age, sex, race, religion, education, veteran status, parents’ education, family income, region, and political views. Somewhat surprising, there is no statistically significant difference between first and second generation immigrants compared to those who are not.</p>
 </div>
-<div id="positioning-it-in-perspective" class="section level2">
-<h2>Positioning it in perspective</h2>
+<div id="multiple-regressions" class="section level2">
+<h2>Multiple regression(s)</h2>
 <p>To control for these other factors, parameters for three different OLS models are estimated to determine what is the true effect of rurality.</p>
-<p><img src="nationalism_rurban_files/figure-html/pm-1.png" width="960" /></p>
+<p><img src="nationalism_rurban_files/figure-html/regression-coefplot-1.png" width="960" /></p>
 <p>First, once we control for basic demographics (except religion, political views, and region), the effect of place of residence remains significant. However, after we include the place where persons grew up until the age of 16, current place of residence does not reach level of statistical significance. On the other hand, place of childhood still has impact on nationalism. Finally, including religion, political views, and region into the model does not drastically alter the situation. Persons who grew up in large city or adjacent suburbs have more open notion of who can be “truly American”, compared to those who grew up in medium cities. Similarly, growing up in rural areas, compared to medium cities, influences more close understanding of “true” belonging to American nation.</p>
 </div>
 <div id="conclusion" class="section level2">
