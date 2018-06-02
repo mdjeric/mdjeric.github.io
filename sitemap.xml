@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://mdjeric.github.io/</title>
+  <link>http://mdjeric.github.io/</link>
+
+<item>
+     <link>https://mdjeric.github.io/</link>
+     <title>Milos Djeric</title>
+     <description>Personal website, with projects, of a sociologist who is passionate about research and data science.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/index.html</link>
+     <title>Milos Djeric</title>
+     <description>Personal website, with projects, of a sociologist who is passionate about research and data science.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/resume.html</link>
+     <title>Curriculum vitae</title>
+     <description>Milos Djeric: detailed CV and short resume. Sociology, data science, and research.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/projects-overview.html</link>
+     <title>Projects</title>
+     <description>Milos Djeric: short overview of recent research and data analysis projects.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/summary-gpsc-survey.html</link>
+     <title>GPSC Survey</title>
+     <description>Description of the 2017/2018 survey of graduate and professional students at SIU.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/nationalism-urban-rural-differences.html</link>
+     <title>American Nationalism and the Curse of Rurality</title>
+     <description>Summary of MA paper: American Nationalism and the Curse of Rurality: Urban-Rural Differences and the Notion of National Belonging. Author: Milos Djeric.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/exyu-diaspora.html</link>
+     <title>Ex-YU Diaspora</title>
+     <description>Exploring languge identification among diasporas from former Yugoslavi in the US.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/report-beg-aero.html</link>
+     <title>Belgrade Nikola Tesla airport</title>
+     <description>Data analysis demonstration using the case of Belgrade Airport.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/report-ini-aero.html</link>
+     <title>Reproducing Data for Airport Nis</title>
+     <description>Data analysis demonstration using the case of Airport Nis.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/r-functions.html</link>
+     <title>Functions</title>
+     <description>Overview of somewhat useful R functions.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/f-sort-regression-coef-plot.html</link>
+     <title>Improving regression ceofficient plots</title>
+     <description>R function that improves complex regression coefficient or AMA plots when using ggplot2. Author: Milos Djeric</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/f-recoding-religion-gss.html</link>
+     <title>Recoding GSS religion</title>
+     <description>R function that recodes GSS religion from three variables to 12 categories, according to paper by Darren E. Sherkat and Derek Lehman. Auhtor: Milos Djeric</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/f-mean-on-at-least.html</link>
+     <title>Mean on at least</title>
+     <description>Simple R function to simulate SPSS mean on at least. Author: Milos Djeric.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/f-scale.html</link>
+     <title>Scaling thousands and millions</title>
+     <description>Super simple R function for use in ggplot2 for scaling axis and transforming #000000 to #M and #000 to #K.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/contact.html</link>
+     <title>Connect</title>
+     <description>Milos Djeric: contact information.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://mdjeric.github.io/milos-djeric_sociology-data-science.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
