@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Belgrade Nikola Tesla airport</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<meta name="description" content="Data analysis demonstration using the case of Belgrade Airport.">
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Milos Djeric</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="resume.html">Curriculum vitae</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="projects-overview.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Recent projects</li>
+    <li>
+      <a href="summary-gpsc-survey.html">GPSC Survey</a>
+    </li>
+    <li>
+      <a href="nationalism-urban-rural-differences.html">Nationalism and 'Curse of Rurality'</a>
+    </li>
+    <li>
+      <a href="exyu-diaspora.html">Ex-YU Diaspora</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">R report samples</li>
+    <li>
+      <a href="report-beg-aero.html">Belgrade Airport</a>
+    </li>
+    <li>
+      <a href="report-ini-aero.html">Nis Airport</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Few R functions
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="r-functions.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="f-sort-regression-coef-plot.html">Improving regression coef. plots</a>
+    </li>
+    <li>
+      <a href="f-recoding-religion-gss.html">Recoding GSS religion</a>
+    </li>
+    <li>
+      <a href="f-mean-on-at-least.html">Mean on at leasst</a>
+    </li>
+    <li>
+      <a href="f-scale.html">Scale with K and M</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/mdjeric">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/milosdjeric/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Belgrade ‘Nikola Tesla’ airport</h1>
+<h3 class="subtitle"><em>Traffic analysis</em></h3>
+
+</div>
+
+
+<hr />
+<p>This is a simple demonstration where I present some of my technical skills in obtaining, analyzing, and presenting data in R.</p>
+<hr />
+<p>Belgrade Airport is the main airport in Serbia, located some 15 km from the downtown of Belgrade. It was opened in 1962, following the closure of the pre-war airport in the current neighborhood of “New Belgrade”. Initially, the airport’s growth culminated in late 80s, when it served as a main hub of Yugoslav Airline Transport, serving it’s large national and international network, and number of foreign carriers. At the time, destinations included cities in North America, Europe, Asia, Africa, and Australia.</p>
+<p>Following the wars in the breakup of Yugoslavia and international sanctions, traffic sharply declined in the 90s until October political changes of 2000. What follows is the brief analysis of current traffic and trends in the past 15 years.</p>
+<div id="historical-trend" class="section level2">
+<h2>Historical trend</h2>
+<p>Looking at data from 2003, we can identify a steady growth with several caveats.</p>
+<p><img src="report-beg-aero_files/figure-html/historical-data-beg-1.png" width="960" alt="Chart with historical trend of mostly continously rising traffic at Belgrade Airport, with arpid rise of cargo in past 5 years." style="display: block; margin: auto;" /></p>
+<p>First, in the past few years there is a rapid growth of cargo transport. Second, we can observe a small “dent”&quot; in traffic, associated with 2009 and economic crisis. And finally, the transformation of the old JAT into Air Serbia did not have a profound effect on overall trend, but its start of operations is identifiable with spike in aircraft operations and a slight jump of passenger traffic.</p>
+</div>
+<div id="regional-context" class="section level2">
+<h2>Regional context</h2>
+<p>In the Balkans, Serbia has fourth busiest air passenger traffic, which is almost exclusively driven by Belgrade Airport. It follows tourism-heavy EU airspace of Greece, Bulgaria, and Croatia. Greece alone has almost double the traffic of all other countries combined (59M compared to 39M).</p>
+<p><img src="report-beg-aero_files/figure-html/balkans-1.png" width="864" alt="Map of Balkans and airports relative to their size. By far most traffic is in Greece, followed by Bulgaria and Croatia, and 8 airports have more than 3 million passengers." style="display: block; margin: auto;" /></p>
+<p>In 2017, Belgrade “Nikola Tesla” Airport was the fifth busiest in the region, with 5.3 million passengers. While Athens had four times more passengers, Belgrade was in the region of other high-performing airports with six and seven million passengers—Thessaloniki, Sofia, and Heraklion—and had 40,000 more passengers than Rhodes.</p>
+</div>
+<div id="destinations" class="section level2">
+<h2>Destinations</h2>
+<p>Currently, around 90 airports on four continents are reachable from Belgrade, most of them through direct lines, except for Santorini and Beijing. Compared to 80s, the number of direct lines has increased while the variety of the long-distance destinations has decreased. For example, currently there is a direct line to New York (three times a week), and several daily flights to Amsterdam, Munich, or Paris. Thirty years ago, even flights to European destinations were sometimes operated via Zagreb, and more often than not, flights to New York, Toronto, Chicago, or Los Angeles. This is, for the most part, on par with global trends in aviation and the rise of the huge airport hubs—such as Dubai, Munich, or Amsterdam.</p>
+<p><img src="report-beg-aero_files/figure-html/destinations-beg-1.png" width="864" alt="Map of destinations from Belgrade Airport" style="display: block; margin: auto;" /></p>
+<p>Lines are centered around areas with large Serbian diaspora (Germany, Scandinavia, Italy), regional destinations, hubs and cities of economic and political importance, and holiday destinations in Mediterranean.</p>
+</div>
+<div id="type" class="section level2">
+<h2>Type</h2>
+<p><img src="report-beg-aero_files/figure-html/destination-type-1.png" width="672" alt="Destination airports according to type of service, slightly over half is regular scheduled service." style="display: block; margin: auto;" /></p>
+<p>Traffic at Belgrade Airport is fairly seasonal, with close to half of all passenger destinations served being either charters or summer lines. Cargo traffic is considerably small, although, the last few years indicate that it is on rapid rise.</p>
+<p><img src="report-beg-aero_files/figure-html/destinations-airlines-1.png" width="672" alt="Bar chart with airlines with more than two destinations from Belgrade: Air Serbia 39, Aviolet 24, Wizz Air 13, DHL Aviation 3" style="display: block; margin: auto;" /></p>
+<p>Destinations are dominated by Air Serbia, and its subsidiary Aviolet, with only Wizz Air—a low-cost airline—having somewhat developed destinations from Belgrade. All other passenger airlines serve fewer than three destinations. This, of course, does not include seasonal and charter traffic.</p>
+<p>This lack of strong competition on individual lines is further evident in the fact that only one destination—Tel Aviv–Ben Gurion—is served by more than two companies, and 44 regular scheduled lines have only one airline operator. Granted, this analysis does not include alliances, subsidiaries, and code-shares which might provide some nuance to this interpretation, or more importantly grouping airports that are close by.</p>
+<p><img src="report-beg-aero_files/figure-html/desintations-number-ofairlines-1.png" width="576" alt="Waffe chart with destinations and number of airlines serving them: 44 destinations one airline, 15 with two, and 1 with three airlines serving them." style="display: block; margin: auto;" /></p>
+</div>
+<div id="data-sources" class="section level2">
+<h2>Data Sources</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_Balkans">Wikipedia contributors, “Belgrade Nikola Tesla Airport,” <em>Wikipedia, The Free Encyclopedia</em>.</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_Balkans">Wikipedia contributors, “List of the busiest airports in the Balkans,” <em>Wikipedia, The Free Encyclopedia</em>.</a></li>
+</ul>
+<hr />
+</div>
+<div id="process-notes" class="section level2">
+<h2>Process Notes</h2>
+<p>Five tables with data were scraped from Wikipedia pages: passenger destinations, cargo destinations, traffic, and busiest routes for Belgrade, and airport traffic for the Balkans.</p>
+<p>Tables were transformed, combined, and separated for presentation of data. The most complex were passenger destinations, which is a two-column table with airlines and grouped destinations separated with commas and annotations. All these airports were separated and classified: regular scheduled, seasonal, and seasonal charters.</p>
+<p>Geographic position of the airports was accessed through AIR-PORT-CODES API, where some systemic and manual modification of airport names were necessary since Wikipedia entries differ from the names in their database. City locations were obtained with <code>ggmap</code>.</p>
+<p>Figures were created using <code>ggplot2</code>, flight pats using <code>geosphere</code>, <code>treemapify</code> for tree map, <code>waffle</code>, and for theme <code>hrbrthemes</code>.</p>
+<p>Code will be on github soon.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

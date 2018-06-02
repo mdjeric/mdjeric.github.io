@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Curriculum vitae</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<meta name="description" content="Milos Djeric: detailed CV and short resume. Sociology, data science, and research.">
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Milos Djeric</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="resume.html">Curriculum vitae</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="projects-overview.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Recent projects</li>
+    <li>
+      <a href="summary-gpsc-survey.html">GPSC Survey</a>
+    </li>
+    <li>
+      <a href="nationalism-urban-rural-differences.html">Nationalism and 'Curse of Rurality'</a>
+    </li>
+    <li>
+      <a href="exyu-diaspora.html">Ex-YU Diaspora</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">R report samples</li>
+    <li>
+      <a href="report-beg-aero.html">Belgrade Airport</a>
+    </li>
+    <li>
+      <a href="report-ini-aero.html">Nis Airport</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Few R functions
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="r-functions.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="f-sort-regression-coef-plot.html">Improving regression coef. plots</a>
+    </li>
+    <li>
+      <a href="f-recoding-religion-gss.html">Recoding GSS religion</a>
+    </li>
+    <li>
+      <a href="f-mean-on-at-least.html">Mean on at leasst</a>
+    </li>
+    <li>
+      <a href="f-scale.html">Scale with K and M</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/mdjeric">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/milosdjeric/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Curriculum vitae</h1>
+
+</div>
+
+
+<p><br></p>
+<hr />
+<div id="info" class="section level3">
+<h3>Info</h3>
+<p>What follows is a fairly detailed CV focused on sociology or data science experiences.</p>
+<p><i class="fa fa-file"></i> For short focused resume click <a href="milos-djeric_sociology-data-science.pdf">here</a>.</p>
+<hr />
+</div>
+<div id="formal-positions" class="section level3">
+<h3>Formal positions</h3>
+<div id="survey-methodology-consultant" class="section level4">
+<h4>Survey Methodology Consultant</h4>
+<div id="siu-graduate-and-professional-student-council-2017present" class="section level5">
+<h5><em>SIU Graduate and Professional Student Council</em>, 2017–present</h5>
+<ul>
+<li>Design and execution of graduate students survey that provides actionable insight.</li>
+<li>Developed interview protocols, questions, project and analysis plans, and reports.</li>
+<li>Worked with external vendors on survey deployment and analysis/reporting.</li>
+<li>Recieved “Oustdanding Service Award 2017–2018”.</li>
+<li><a href="gpsc.html">More details under projects page.</a></li>
+</ul>
+</div>
+</div>
+<div id="graduate-assistant" class="section level4">
+<h4>Graduate Assistant</h4>
+<div id="southern-illinois-university-20152017" class="section level5">
+<h5><em>Southern Illinois University</em>, 2015–2017</h5>
+<ul>
+<li>Regular duties included, among other, leading and organizing discussions, grading, following individual progress and addressing potential problems (Intro to Sociology and Race and Ethnicity).</li>
+<li>For revised summer duties, I created comprehensive literature review and presentation on effective strategies and challenges in on-line sociology classes.</li>
+</ul>
+</div>
+</div>
+<div id="sociology-instructor" class="section level4">
+<h4>Sociology Instructor</h4>
+<div id="high-school-for-dentistry-xiv-belgrade-gymnasium-bgv-logic-20142015" class="section level5">
+<h5><em>High School for Dentistry</em> &amp; <em>XIV Belgrade Gymnasium</em> &amp; <em>BGV Logic</em>, 2014–2015</h5>
+<ul>
+<li>Occasional substitute teacher in two high schools, and in total interacted with over 500 students, divided in classes sized between 30 and 40.</li>
+<li>Taught Sociology; Civil Education; Constitution and Civil Rights. Created monthly, daily, and individual class level operational plans; constructed tests; graded students (supervised, 100% grades upheld); participated in the work of schools’ governing and operational bodies.</li>
+<li>Sociology instructor in private preparatory school for university entrance exams (BGV Logic). All students enrolled at their desired college.</li>
+</ul>
+</div>
+</div>
+<div id="research-assistant" class="section level4">
+<h4>Research Assistant</h4>
+<div id="institute-for-sociological-research-20122013" class="section level5">
+<h5><em>Institute for Sociological Research</em>, 2012–2013</h5>
+<ul>
+<li>Participated in two projects: “Social responsibility of academic community” and “Policies of parenthood”.</li>
+<li>Conducted in-depth interviews, evaluated and modified questionnaires and interview protocols.</li>
+<li>Provided preliminary data analysis (descriptive statistics, simple regression models).</li>
+<li>Assisted in project coordination, planning, and report writing.</li>
+<li>Increased response rate on a survey of university professors at one college from 10% to 90%.</li>
+</ul>
+</div>
+</div>
+<div id="principal-investigator" class="section level4">
+<h4>Principal Investigator</h4>
+<div id="grant-from-open-society-institute-20092010" class="section level5">
+<h5><em>Grant from Open Society Institute</em>, 2009–2010</h5>
+<ul>
+<li>First person to obtain grant for research within UEP home country project program ($500).</li>
+<li>Prepared detailed plan, budget, timeline; ensured completion and internal/external evaluation of the project.</li>
+<li>Designed, conducted, and organized a survey of LGBT persons on issue of violence.</li>
+<li>Analyzed data and presented results on a conference in Istanbul.</li>
+</ul>
+</div>
+</div>
+<div id="research-intern" class="section level4">
+<h4>Research Intern</h4>
+<div id="centre-for-education-policy-2008" class="section level5">
+<h5><em>Centre for Education Policy</em>, 2008</h5>
+<ul>
+<li>Created two questionnaires, still used, for long-term national comparative study of Bologna process.</li>
+<li>Independently wrote and prepared for print all survey questions based on guide-book used across Europe.</li>
+</ul>
+</div>
+</div>
+<div id="freelance-journalist" class="section level4">
+<h4>Freelance Journalist</h4>
+<div id="serbian-broadcast-coorporation-2005" class="section level5">
+<h5><em>Serbian Broadcast Coorporation</em>, 2005</h5>
+<ul>
+<li>Wrote two commentary reports and participated in their production (including narration and studio talk) for award-winning national educational program for youth.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="research" class="section level3">
+<h3>Research</h3>
+<div id="american-nationalism-and-the-curse-of-rurality-urban-rural-differences-and-the-notion-of-national-belonging" class="section level5">
+<h5>American Nationalism and the “Curse of Rurality”: Urban-Rural Differences and the Notion of National Belonging</h5>
+<p>Relationship between nationalism and urban or rural environment is not one that is often studied, part from traditional historical interpretation of it being a modern, urban phenomenon, characterized by imagery and discourse of rurality. Yet it seems that, in the last several decades, not only have nationalist conflicts mostly been rooted within the countryside and nationalist agendas won on elections in them, but that there is a more fundamental connection between nationalism and rurality. While briefly addressing this issue, this paper focuses on the analysis of 2014 GSS data, exploring the relationship between the place of living and the notion of national belonging. What is presented is a clear, but not conclusive, evidence on the presence of more nationalistic attitudes among persons living in rural areas, especially among those who spent most of their childhood in them. <a href="nationalism_rurban.html">More details under projects page.</a></p>
+</div>
+<div id="serb-diaspora-and-serbia-analysis-of-identity-constructs-promoted-in-official-textbooks-for-diaspora-for-elementary-education" class="section level5">
+<h5>Serb Diaspora and Serbia: Analysis of Identity Constructs Promoted in Official Textbooks for Diaspora for Elementary Education</h5>
+<p>Discourse analysis is used to analyse identity constructs promoted in school textbooks for Serbian diaspora, looking for the elements of common national and cultural identity, and the way in which common historical past, present, but also future, is constructed. Additionally, I looked for presentation of Serbian diaspora and its historical role. Following Appadurai and Bauböck, I assume that diaspora is Anderson’s imagined community, which as a political project needs to be imagined and mobilized across the world - and these textbooks are one of the unifying components. General description of the textbooks was created by quantifying 822 lessons across 20 categories of analysis. Sample of 99 units was selected for discourse analysis, which was employed by modifying Ruth Wodak’s main themes through emphasis on Hall’s discursive strategies and Hobsbawm’s invented tradition.</p>
+</div>
+<div id="serbia-of-canadian-serbs-and-canada-of-serbian-canadians-perception-of-canada-and-serbia-in-serbian-diaspora-in-canada-based-on-content-analysis-of-novine-from-toronto-from-march-2011-to-march-2012" class="section level5">
+<h5>Serbia of Canadian Serbs and Canada of Serbian Canadians: Perception of Canada and Serbia in Serbian diaspora in Canada based on content analysis of Novine from Toronto from March 2011 to March 2012</h5>
+<p>For the purpose of my bachelor thesis, I attempted to reconstruct the image of Serbia and Canada portrayed in Serbian diaspora weekly newspapers “Novine” from Toronto, assuming that at least in part they shape and reflect political and cultural attitudes and formations of Serbian diaspora. Sample included 1579 texts from March 2011 to March 2012, quantitatively analyzed in 35 substantial categories, of which few were qualitatively studied.</p>
+</div>
+<div id="content-analysis-of-the-nacionalni-stroj-gathering-in-novi-sad-in-daily-newspapers-danas-politika-kurir-and-pravda" class="section level5">
+<h5>Content Analysis of the “Nacionalni Stroj” Gathering in Novi Sad in Daily Newspapers Danas, Politika, Kurir and Pravda</h5>
+<p>The goal of this paper was to determine the way in which four Belgrade daily newspapers – “Danas”, “Politika”, “Kurir” and “Pravda”, reported on public gathering led by “Nacionalni stroj”, a national-socialist organization. The period covered was three weeks before, and two weeks after the gathering. The results show that newspapers “Danas” and “Politika” gave a lot of attention to the problem of Nazism and fascism in society, and to whether and how should society react to that public gathering. “Kurir” and “Pravda” gave significantly less attention to the gathering, and the problem of Nazism and fascism was brought up only as a daily-political topic. An important observation, to which we came, shows that radical organizations started to act “politically correct” in media, although their statutes and programs haven’t changed at all, which implies an important question: what kind of attitude should media have towards that type of organizations.</p>
+</div>
+<div id="other-research-projects" class="section level5">
+<h5>Other research projects</h5>
+<ul>
+<li>Analysis of Serbian diaspora voting</li>
+<li>Measuring sociological imagination</li>
+<li>Comparative analysis between Serbia and USA on LGBT and abortion
+<ul>
+<li>Compare attitudes about LGBT persons and abortion, using General Social Survey and similar Serbian survey in Stata.</li>
+</ul></li>
+<li>Survey on racism among college students</li>
+<li>Perception of photographs
+<ul>
+<li>Developed a software in C++ where participants assessed photographs.</li>
+<li>Developed second “software” that combined all data into one file (in Pascal, if I remember correctly).</li>
+<li>Conducted data analysis in SPSS.</li>
+</ul></li>
+<li>Comparison of the image of ideal partner and attachment styles</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="education" class="section level3">
+<h3>Education</h3>
+<div id="ma-sociology-siu-carbondale-2017" class="section level5">
+<h5>MA Sociology, <em>SIU Carbondale</em>, 2017</h5>
+<p>Assistantship, GPA 3.67 (4.00).</p>
+</div>
+<div id="ma-sociology-university-of-belgrade-2013" class="section level5">
+<h5>MA Sociology, <em>University of Belgrade</em>, 2013</h5>
+<p>Full tuition award, av. grade 9.67 (10.0).</p>
+</div>
+<div id="ba-with-honors-sociology-university-of-belgrade-2012" class="section level5">
+<h5>BA with Honors Sociology, <em>University of Belgrade</em>, 2012</h5>
+<p>Full tuition award and scholarship, av. grade 9.12 (10.0), top 5% of cohort in speed of studies.</p>
+<ul>
+<li>Academic exchange, <em>University of Zagreb</em>, 2010
+<ul>
+<li>Basileus Erasmus Mundus full scholarship.</li>
+</ul></li>
+<li>Academic exchange, <em>New York University</em>, 2008–2009
+<ul>
+<li>Open Society Institute UEP Fellowship.</li>
+</ul></li>
+</ul>
+</div>
+<div id="diploma-associate-degree-mathematics-and-computer-sciences-mathematical-grammar-school-2006" class="section level5">
+<h5>Diploma (Associate Degree) Mathematics and Computer Sciences, <em>Mathematical Grammar School</em>, 2006</h5>
+<p>Special school for gifted and talented students of mathematics, physics and informatics, with advanced curriculum.</p>
+<ul>
+<li>Psychology Seminars, <em>Petnica Science Center</em>, 2005</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="miscellaneous" class="section level3">
+<h3>Miscellaneous</h3>
+<div id="other-projects" class="section level5">
+<h5>Other projects</h5>
+<ul>
+<li>Teaching Sociology On-Line</li>
+<li>President of the NGO “Center for Diversity Promotion”</li>
+<li>Assistant at MEC – Media Laboratory</li>
+</ul>
+</div>
+<div id="membership-in-professional-organziations" class="section level5">
+<h5>Membership in professional organziations</h5>
+<ul>
+<li>Current: American Sociological Association; Midwest Sociological Society; Serbian Sociological Society (one of the founders of the section).</li>
+<li>Past: College of Liberal Arts Council; SIU Sociology Graduate Students Association.</li>
+</ul>
+</div>
+<div id="languages" class="section level5">
+<h5>Languages</h5>
+<ul>
+<li>English</li>
+<li>Serbo-Croatian (Bosnian, Croatian, Montenegrin, Serbian)</li>
+<li>French (<em>limited profficiency</em>)</li>
+</ul>
+</div>
+<div id="translations" class="section level5">
+<h5>Translations</h5>
+<ul>
+<li>“Rural Development: From Practices and Policies towards Theory” (Van Der Ploeg, et. al.) into Serbian, published in edited volume in 2017 by Institute for School Books.</li>
+</ul>
+</div>
+<div id="certifications" class="section level5">
+<h5>Certifications</h5>
+<ul>
+<li>Investigators and staff involved primarily in Social/Behavioral Research with human subjects, #18658296, CITI Program, exp. Feb 2019.</li>
+</ul>
+</div>
+<div id="some-volunteering" class="section level5">
+<h5>Some volunteering</h5>
+<ul>
+<li>Museum Night (Faculty of Philosophy), Belgrade.</li>
+<li>Festival Against Violence – Camino, Toulouse.</li>
+<li>JASA Housing for Old People, New York.</li>
+<li>Painting elementary school, Istanbul.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="skills" class="section level3">
+<h3>Skills</h3>
+<ul>
+<li>Survey research and analysis
+<ul>
+<li>design, sampling, administration, data collection</li>
+</ul></li>
+<li>Quantitative research and analysis
+<ul>
+<li>secondary data analysis, data analysis, visualization, data wrangling, statistics</li>
+</ul></li>
+<li>Qualitative research and analysis
+<ul>
+<li>in-depth interviews, focus groups, discourse analysis, observation</li>
+</ul></li>
+<li>Mixed-methods, media research, project management, presentation, collaboration</li>
+</ul>
+<div id="some-technical-skills" class="section level5">
+<h5>Some technical skills</h5>
+<ul>
+<li>Easy use
+<ul>
+<li>R, SPSS, MS Office (including decently advanced Excel), Latex, Google Applications, Open Office,…</li>
+</ul></li>
+<li>Comforable to use
+<ul>
+<li>Stata, NVivo, SQL, Tableau, Linux</li>
+</ul></li>
+<li>Used it, long time ago
+<ul>
+<li>C++, Pascal, Prologue, and probably something else</li>
+</ul></li>
+<li>Started to learn or would like to learn to use
+<ul>
+<li>Python, SAS, NoSQL, Spark/Hadoop/Hive,…</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
