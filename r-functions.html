@@ -286,7 +286,8 @@ $(document).ready(function () {
 <p>Following great advice for data visualization in Kieran Healy’s <a href="http://socviz.co/" target="_blank">Data Visualization</a>, among other things when plotting marginal effects (or coefficients) one should order them in their size. However, in case of large number of categorical variables, with several levels, it can be quite tricky to read. Once several models are included it becomes a hell. This function prepares data frame with coefficients for plotting with facets. Effectively, it orders whole variables according to the number of models in which they are, within those groups, it then orders variables according to their average value, and in the end, orders levels (sample is included). It’s not complicated, but it uses several for loops and there is probably way to do some of these things easier. <a href="f-recoding-religion-gss.html">It’s here</a>.</p>
 </div>
 <div id="recoding-gss-religion" class="section level3">
-<h3>Recoding GSS religion</h3>
+<h3>Recoding GSS religion <a href="resurrectionr.html"> <img src="images/resurrectionr-logo.png" alt="resurrectionr package logo" height = 139 width = 120 align="right"> </a></h3>
+<h4> UPDATE: Function is turned into package <a href="https://mdjeric.github.io/resurrectionr">resurrectionr</a>.</h4>
 <p>Function recodes religion from three variables: <code>relig</code>, <code>denom</code>, and <code>other</code> according to classification provided by Sherkat and Lehman in <a href="https://iranianredneck.wordpress.com/2016/11/29/why-reltrad-sucks-contesting-the-measure-of-american-religion/" target="_blank">“After The Resurrection: The Field of the Sociology of Religion in the United States”</a>. Main goal is to address three issues:</p>
 <ol style="list-style-type: decimal">
 <li>Recode religion successfully.</li>
